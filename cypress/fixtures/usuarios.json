@@ -1,18 +1,18 @@
 [
     {
-        "email": "luke.skywalker@alura.com.br",
+        "email": "luke.skywalker@startwars.com.br",
         "fullName": "Luke Skywalker",
         "userName": "luke",
         "password": "skywalker"
     },
     {
-        "email": "leia.organa@alura.com.br",
+        "email": "leia.organa@startwars.com.br",
         "fullName": "Leia Organa",
         "userName": "leia",
         "password": "general"
     },
     {
-        "email": "anakin.skywalker@alura.com.br",
+        "email": "anakin.skywalker@startwars.com.br",
         "fullName": "Anakin Skywalker",
         "userName": "anakin",
         "password": "darthvader"
