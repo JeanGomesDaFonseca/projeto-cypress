@@ -88,7 +88,7 @@ describe("Login e registro de usuarios alura pic", () => {
   const usuarios = require('../../fixtures/usuarios.json')
   usuarios.forEach(usuario =>{
 
-    it.only(`registra novo usuário ${usuario.userName} `, () => {
+    it(`registra novo usuário ${usuario.userName} `, () => {
       cy.contains('a', 'Register now').click();
       cy.contains('button', 'Register'). click();
       cy.get('input[formcontrolname="email"]').type(usuario.email);
@@ -97,6 +97,15 @@ describe("Login e registro de usuarios alura pic", () => {
       cy.get('input[formcontrolname="password"]').type(usuario.password);
       cy.contains('button', 'Register').click();
     })
+
+  })
+
+  /* novos casos de teste */
+
+  it('verifica mensagens tela inicial', () =>{
+    cy.contains('ap-vmessage', 'User name is required!').should('be.visible');
+    cy.contains('ap-vmessage', 'Password is required!').should('be.visible');
+    cy.get('button[type="submit"]').should('be.disabled');
 
   })
 
