@@ -1,3 +1,7 @@
-# cypress.env.json
+# caso precise manter um arquivo somente no meu
+# computador é aqui onde preciso inseri-los
+# para que ele não suba junto com os commits futuros.
+cypress.env.json
+
 
 node_modules

@@ -13,5 +13,8 @@ module.exports = defineConfig({
       json: false,
       timestamp: "mmddyyyy_HHMMss",
     },
+    e2e: {
+      baseUrl: "https://alura-fotos.herokuapp.com",
+    },
   },
 });
